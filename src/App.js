@@ -12,7 +12,7 @@ import Work from './components/work experience/Work_Experience';
 function App() {
   return (
     <div className="App">
-     <Navigation />
+      <Navigation />
       <Home />
       <About />
       <Education />
