@@ -8,12 +8,14 @@ import Navigation from './components/navigation/Navigation';
 import Projects from './components/projects/Projects';
 import Skills from './components/skills/Skills';
 import Work from './components/work experience/Work_Experience';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
     <div className="App">
       <Navigation />
       <Home />
+      <Contact />
       <About />
       <Education />
       <Work />
