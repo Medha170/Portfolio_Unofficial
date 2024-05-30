@@ -10,7 +10,7 @@ function Navigation() {
             <nav>
                 <ul className='navbar'>
                     <li className='nav-item home'>
-                        <a href="#">HOME</a>
+                        <a href="#home">HOME</a>
                     </li>
                     <li className='nav-item contact'>
                         <a href="#contact">CONTACT</a>
