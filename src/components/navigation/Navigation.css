@@ -2,6 +2,7 @@ header{
     display : flex;
     justify-content: space-around;
     border-bottom: 2px solid #ccc;
+    position: relative;
 }
 
 .sign{
@@ -19,18 +20,30 @@ header{
 }
 
 .nav-item a{
+    padding : 5px;
     text-decoration: none;
     color: grey;
 }
 
-.line{
-    color : grey;
+.nav-item a::after{
+    content: '';
+    display : block;
+    height : 2px;
+    width : 0;
+    background: #B15EFF;
+    transition : width 0.3s ease;
+}
+
+.nav-item a.active {
+    color: black;
 }
 
 .nav-item a:hover{
-    color: black;
-    text-decoration: 1px solid #B15EFF underline;
-    transition: 0.5s ease-in-out;
+    color : black;
 }
+
+.nav-item a:hover::after{
+    width : 100%;
+}   
 
 
