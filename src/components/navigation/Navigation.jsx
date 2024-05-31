@@ -9,14 +9,14 @@ function Navigation() {
             </div>
             <nav>
                 <ul className='navbar'>
-                    <li className='nav-item home'>
+                    <li className='nav-item'>
                         <a href="#home">HOME</a>
                     </li>
-                    <li className='nav-item contact'>
+                    <li className='nav-item'>
                         <a href="#contact">CONTACT</a>
                     </li>
                     <span className='line'>|</span>
-                    <li className='nav-item about'>
+                    <li className='nav-item'>
                         <a href="#about">ABOUT</a>
                     </li>
                 </ul>

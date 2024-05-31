@@ -1,50 +1,43 @@
-header {
-    display: flex;
-    justify-content: space-between; /* Ensures space between the sign and navbar */
-    align-items: center; /* Vertically centers the items */
-    padding: 0 20px; /* Adds some padding to the header */
+header{
+    display : flex;
+    justify-content: space-around;
+    align-items: center;
     border-bottom: 2px solid #ccc;
     position: relative;
 }
 
-
-
-.navbar {
+.navbar{
     list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+    display : flex;
+    align-items: center;
 }
 
-.nav-item {
-    margin: 0 10px;
+.nav-item{
+    margin : 0 10px;
 }
 
-.nav-item a {
-    padding: 5px;
+.nav-item a{
     text-decoration: none;
     color: grey;
 }
 
-.nav-item a::after {
+.nav-item a::after{
     content: '';
-    display: block;
-    height: 2px;
-    width: 0;
+    display : block;
+    height : 2px;
+    width : 0;
     background: #B15EFF;
-    transition: width 0.3s ease;
+    transition : width 0.3s ease;
 }
 
 .nav-item a:active {
     color: black;
 }
 
-.nav-item a:hover {
-    color: black;
+.nav-item a:hover{
+    color : black;
 }
 
-.nav-item a:hover::after {
-    width: 100%;
-}
-
-
+.nav-item a:hover::after{
+    width : 100%;
+} 

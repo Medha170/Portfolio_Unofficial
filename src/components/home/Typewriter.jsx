@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import './Home.css'
 function Typewriter({text, typingSpeed = 100, deletingSpeed = 50, duration = 500}){
     const [displayedText, setDisplayedText] = useState("");
     const [isDeleting, setIsDeleting] = useState(false);
