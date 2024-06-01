@@ -1,9 +1,14 @@
 import Home from './../../components/home'
 import Skills from '../../components/skills';
+import Projects from '../../components/projects';
 
 function HomePage() {
   return (
-    <><Home /><Skills /></>
+    <div>
+      <Home />
+      <Skills />
+      <Projects />
+    </div>
   );
 }
 

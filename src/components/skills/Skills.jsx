@@ -10,7 +10,7 @@ const skills = [
   { img: 'https://i.pinimg.com/564x/b7/c2/e5/b7c2e508920a1168b94dea8675fa311d.jpg', name: 'CSS' },
   { img: 'https://i.pinimg.com/564x/f8/ee/69/f8ee696f018c1a4ad6b9972b85fc6b2e.jpg', name: 'MySql' },
   { img: 'https://i.pinimg.com/564x/8d/fe/0a/8dfe0a99a74efbec4af0d8e440c00282.jpg', name: 'React' },
-  { img: 'https://i.pinimg.com/564x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg', name: 'C' }
+  { img: 'https://i.pinimg.com/564x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg', name: 'C' },
 ];
 
 const params = {
@@ -41,7 +41,7 @@ function Skills() {
             {skills.map((skill, index) => (
               <div key={index} className='skill'>
                 <div className='skill-img'>
-                  <img src={skill.img} alt={skill.name} />
+                  <img src={skill.img} alt={skill.name} height={200} width={200}/>
                 </div>
                 <div className='skill-name'>{skill.name}</div>
               </div>

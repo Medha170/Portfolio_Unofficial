@@ -1,0 +1,60 @@
+/* Initial styles for the tile */
+.tile {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(128, 128, 128, 0.5); /* Grey shadow */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .tile img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .text-parent h2 {
+    color: black;
+    margin: 0;
+  }
+  
+  .text-parent h3 {
+    color: black;
+    margin: 0;
+  }
+  
+  .text-parent .text {
+    color: grey;
+    margin-top: 10px;
+  }
+  
+  .link-parent .link {
+    color: blue;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  
+  .link-parent .link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hover effect */
+  .tile:hover {
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(106, 13, 173, 0.5); /* Purple shadow */
+  }
+  
+  .tile:hover .text-parent h2,
+  .tile:hover .text-parent h3 {
+    color: #B15EFF; /* Shade of purple */
+  }
+  
+  .tile:hover .text-parent .text {
+    color: black;
+  }
+  
