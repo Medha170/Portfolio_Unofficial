@@ -1,8 +1,9 @@
 import Home from './../../components/home'
+import Skills from '../../components/skills';
 
 function HomePage() {
   return (
-    <Home />
+    <><Home /><Skills /></>
   );
 }
 
