@@ -3,7 +3,7 @@ import './Navigation.css';
 import signature from './../../assets/signature.png';
 function Navigation() {
     return (
-        <header>
+        <header className='nav-header'>
             <div className='sign'>
                 <img src={signature} alt='signature' />
             </div>
