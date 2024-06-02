@@ -3,8 +3,9 @@ import Footer from './components/footer';
 import Navigation from './components/navigation';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-import EducationPage from './pages/EducationPage/EducationPage';
+import EducationPage from './pages/EducationPage';
 import HomePage from './pages/HomePage';
+import WorkExperiencePage from './pages/WorkExperiencePage';
 
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Navigation />
       {/* <HomePage /> */}
       {/* <AboutPage /> */}
-      <EducationPage />
+      {/* <EducationPage /> */}
+      <WorkExperiencePage />
       {/* <ContactPage /> */}
       {/* <Footer /> */}
     </div>
