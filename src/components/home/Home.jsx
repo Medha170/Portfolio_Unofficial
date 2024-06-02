@@ -1,6 +1,7 @@
 import React from 'react';
 import './Home.css';
 import Typewriter from './Typewriter.jsx';
+import { Link } from 'react-router-dom';
 function Home() {
   return (
     <div id='home'>
@@ -26,15 +27,15 @@ function Home() {
         </div>
         <div className='hover-effect'></div>
         <div className='button-container'>
-         <a href='#about' className='btn'>
+         <Link to='/about' className='btn'>
            <button className='button about'>More About Me</button>
-         </a>
-         <a href='#education' className='btn'>
+         </Link>
+         <Link to='/education' className='btn'>
            <button className='button education'>Education</button>
-         </a>
-         <a href='#work-experience' className='btn'>
+         </Link>
+         <Link to='/work-experience' className='btn'>
            <button className='button work'>Work Experience</button>
-         </a>
+         </Link>
          <a target="_blank" href='https://drive.google.com/file/d/1VsWChYABHxG8cqd-ZiS9jZVfjUZBiORa/view' className='btn'>
            <button className='button resume'>Tableau Resume</button>
          </a>

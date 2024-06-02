@@ -5,6 +5,7 @@ import Signature from './../../assets/signature_blackbg.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faYoutube, faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -13,9 +14,9 @@ const Footer = () => {
         <div className="footer-section">
           <img src={Signature} alt="Medha Shree" className="signature" height={150} width={250}/>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Me</Link></li>
+            <li><Link to="/contact">Contact Me</Link></li>
           </ul>
         </div>
         <div className="footer-section">
@@ -41,4 +42,15 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+const App = () => {
+  return (
+    <div className="app">
+      <div className="main-content">
+        {/* Your main content goes here */}
+      </div>
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
