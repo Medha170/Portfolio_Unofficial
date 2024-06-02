@@ -36,7 +36,7 @@ function Home() {
          <Link to='/work-experience' className='btn'>
            <button className='button work'>Work Experience</button>
          </Link>
-         <a target="_blank" href='https://drive.google.com/file/d/1VsWChYABHxG8cqd-ZiS9jZVfjUZBiORa/view' className='btn'>
+         <a target="_blank" href='https://drive.google.com/file/d/1VsWChYABHxG8cqd-ZiS9jZVfjUZBiORa/view?usp=sharing' className='btn'>
            <button className='button resume'>Tableau Resume</button>
          </a>
        </div>

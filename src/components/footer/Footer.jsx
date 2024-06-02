@@ -31,7 +31,7 @@ const Footer = () => {
           <h3>More from me</h3>
           <ul>
             <li><a href="https://github.com/Medha170" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faGithub} /> Github</a></li>
-            <li><a href="https://drive.google.com/file/d/1VsWChYABHxG8cqd-ZiS9jZVfjUZBiORa/view"><FontAwesomeIcon icon={faFileAlt} /> Resume</a></li>
+            <li><a href="https://drive.google.com/file/d/1VsWChYABHxG8cqd-ZiS9jZVfjUZBiORa/view?usp=sharing"><FontAwesomeIcon icon={faFileAlt} /> Resume</a></li>
           </ul>
         </div>
       </div>
