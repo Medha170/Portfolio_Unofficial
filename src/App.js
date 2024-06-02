@@ -2,6 +2,7 @@ import './App.css';
 import Footer from './components/footer';
 import Navigation from './components/navigation';
 import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 
 
@@ -10,7 +11,8 @@ function App() {
     <div className="App">
       <Navigation />
       {/* <HomePage /> */}
-      <AboutPage />
+      {/* <AboutPage /> */}
+      <ContactPage />
       {/* <Footer /> */}
     </div>
   );
