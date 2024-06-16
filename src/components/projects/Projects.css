@@ -2,39 +2,89 @@
     font-size: 2.5rem;
     color: #6a0dad;
     margin-bottom: 20px;
-}
-
-.separator {
+  }
+  
+  .separator {
     width: 80%;
     height: 2px;
     background-color: #6a0dad;
     margin: 40px 0;
   }
-
-.projects{
+  
+  .projects {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.project-container {
+  }
+  
+  .project-container {
     display: grid;
-    grid-template-columns: repeat(4, minmax(300px, 1fr));
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
     gap: 3rem;
-    margin: 10rem;
+    margin: 3rem;
     position: relative;
-    background-image: url('https://nischaypandey.github.io/Portfolio/static/media/shape3.aeacc99a.webp'); /* Path to your background image */
-    background-size: cover;  /* Might not work if image is short */
-    background-repeat: no-repeat;  /* Alternative for short images */
-    height: 100%;  /* Fills container height */
-}
-
-
-
-.grid-item {
+    background-image: url('https://nischaypandey.github.io/Portfolio/static/media/shape3.aeacc99a.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+  }
+  
+  .grid-item {
     padding: 20px;
     position: relative;
-    z-index: 1; /* Ensure content is above the background image */
-}
-
+    z-index: 1;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 1200px) {
+    .project-container {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .projects-heading {
+      font-size: 2rem;
+    }
+    .separator {
+      width: 90%;
+    }
+    .project-container {
+      gap: 2rem;
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-heading {
+      font-size: 1.8rem;
+    }
+    .separator {
+      width: 90%;
+    }
+    .project-container {
+      grid-template-columns: 1fr;
+      margin: 1rem;
+    }
+    .grid-item {
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .projects-heading {
+      font-size: 1.5rem;
+    }
+    .separator {
+      width: 95%;
+    }
+    .project-container {
+      margin: 1rem;
+    }
+    .grid-item {
+      padding: 10px;
+    }
+  }
+  

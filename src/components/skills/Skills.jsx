@@ -1,6 +1,6 @@
 import React from 'react';
 import './Skills.css';
-import {Carousel} from 'nuka-carousel';
+import Tile from './../Tile'; // Assuming your Tile component is in the same directory
 
 const skills = [
   { img: 'https://i.pinimg.com/564x/7b/25/56/7b2556503cbd9035d51831afd44bf888.jpg', name: 'Java' },
@@ -13,21 +13,6 @@ const skills = [
   { img: 'https://i.pinimg.com/564x/6e/46/e7/6e46e7dbe2bb73dacc055e5dbd85c3ad.jpg', name: 'C' },
 ];
 
-const params = {
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplayInterval: 2000,
-  wrapAround: true,
-  cellSpacing: 10,
-  renderCenterLeftControls: ({ previousSlide }) => (
-    <button onClick={previousSlide} className="carousel-control">{"<"}</button>
-  ),
-  renderCenterRightControls: ({ nextSlide }) => (
-    <button onClick={nextSlide} className="carousel-control">{">"}</button>
-  ),
-};
-
 function Skills() {
   return (
     <div id='skills'>
@@ -37,16 +22,9 @@ function Skills() {
         </div>
         <div className='separator'></div>
         <div className='skills-container'>
-          <Carousel {...params}>
-            {skills.map((skill, index) => (
-              <div key={index} className='skill'>
-                <div className='skill-img'>
-                  <img src={skill.img} alt={skill.name} height={200} width={200}/>
-                </div>
-                <div className='skill-name'>{skill.name}</div>
-              </div>
-            ))}
-          </Carousel>
+          {skills.map((skill, index) => (
+            <Tile key={index} img={skill.img} header={skill.name} />
+          ))}
         </div>
       </section>
     </div>
